@@ -7,20 +7,22 @@
 
 variable "project" {
   description = "ID of your GCP project. Make sure you set this up before running this terraform code.  REQUIRED."
+  default     = "p-8nj0d9cym739elq63nb8xc04y7he"
 }
 
 variable "prefix" {
   description = "This prefix will be included in the name of some resources. You can use your own name or any other short string here."
+  default     = "krolfsme"
 }
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "us-central1"
+  default     = "us-east4"
 }
 
 variable "zone" {
   description = "The zone where the resources are created."
-  default     = "us-central1-b"
+  default     = "us-east4-a"
 }
 
 variable "subnet_prefix" {
